@@ -29,7 +29,7 @@
 }
 
 /* General */
-body {font-family: 'Source Sans Pro', sans-serif; }
+body {font-family: 'Source Sans Pro', sans-serif; min-width:510px;}
 a, a:active, a:focus {color:#333; outline: none; outline-style: none;}
 a:hover {color:#333; text-decoration:none;}
 pre {padding:20px;}
@@ -38,8 +38,8 @@ h1, h2, h3, h4, h5, h6 {font-family: 'Source Sans Pro', sans-serif; margin: 0;}
 .separate:before { content : ""; position: absolute; left    : 49%; bottom  : 0; height  : 1px; width   : 2%;  /* or 100px */border-bottom:1px solid white;}
 
 /* Main Title */
-.wrapper-header {margin-bottom: 30px; background: #222; height:100vh; position: fixed; overflow: auto;}
-.main-title {text-align: center; margin-top:70px; margin-bottom: 50px;}
+.wrapper-header {margin-bottom: 30px; background: #222; height:100vh; position: fixed; overflow: auto;min-width: 170px;}
+.main-title {text-align: center; margin-top:50px; margin-bottom: 50px;}
 .main-title h1{ padding:0 6px;font-size:40px; color:#ddd; letter-spacing: 5px;  display: inline;  text-transform: uppercase; border: 2px solid #ddd;}
 .main-title .page-desc { color: #bcbbba; letter-spacing: 2px; font-size: 14px; margin-top: 20px; padding: 0 40px;}
 @media screen and (max-width: 500px) {
