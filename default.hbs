@@ -1,0 +1,78 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    {{! Document Settings }}
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    {{! Page Meta }}
+    <title>{{meta_title}}</title>
+    <meta http-equiv="Content-Type" content="application/xhtml+xml">
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    {{! Styles'n'Scripts }}
+    <link rel="stylesheet" type="text/css" href="{{asset "css/bootstrap.css"}}" />
+    <link rel="stylesheet" type="text/css" href="{{asset "css/prism.css"}}" />
+    <link rel="stylesheet" type="text/css" href="{{asset "css/style.css"}}" />
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700' rel='stylesheet' type='text/css'>
+    {{! Ghost outputs important style and meta data with this tag }}
+    {{ghost_head}}
+</head>
+<body class="{{body_class}}">
+
+{{! Main Title}}
+
+        
+        
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-3 col-md-3 wrapper-header">
+
+      <div class="main-title">
+        {{#if @blog.logo}}
+        <img src="{{@blog.logo}}" style="width:50px;">
+        {{else}}
+        <a href="{{@blog.url}}"><h1 class="page-title">{{@blog.title}}</h1></a>
+        {{/if}}
+        
+      </div>
+      <div class="separate"></div>
+      <div class="main-nav">{{navigation}}</div> 
+      <div class="separate"></div>
+      <div class="social-media">
+        <a href="#"><span class="icon-twitter logo-instagram"></span></a>
+        <a href="#"><span class="icon-instagram logo-instagram"></span></a>
+        <a href="#"><span class="icon-linkedin logo-instagram"></span></a>
+        <a href="#"><span class="icon-github logo-instagram"></span></a>
+      </div>  
+    </div> <!-- wrapper-header -->
+
+        {{! Everything else gets inserted here }}
+        {{{body}}}
+      
+        <div class="wrapper-footer">
+          <footer>
+                        <div class="col-md-12 col-md-6 col-lg-6">
+                          <section class="powered">Proudly Powered by <a href="http://ghost.org/">Ghost</a>.
+                        </div>     
+                         <div class=" col-md-12 col-md-6 col-lg-6">
+                        <section class="copyright">All content copyright <a href="{{@blog.url}}">{{@blog.title}}</a> &copy; {{date format="YYYY"}}.</section>
+                        </div>   
+
+                        <div class="clearfix"></div>
+                      </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    {{! Ghost outputs important scripts and data with this tag }}
+    {{ghost_foot}}
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    {{! The main JavaScript file for Marcell }}
+    <script type="text/javascript" src="{{asset "js/custom.js"}}"></script>
+    <script type="text/javascript" src="{{asset "js/prism.js"}}"></script>
+</body>
+</html>
