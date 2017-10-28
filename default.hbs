@@ -15,7 +15,8 @@
     <link rel="stylesheet" type="text/css" href="{{asset "css/bootstrap.css"}}" />
     <link rel="stylesheet" type="text/css" href="{{asset "css/prism.css"}}" />
     <link rel="stylesheet" type="text/css" href="{{asset "css/style.css"}}" />
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700' rel='stylesheet' type='text/css'>
+    <!-- <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700' rel='stylesheet' type='text/css'> -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700" rel="stylesheet" type='text/css'> -->
     {{! Ghost outputs important style and meta data with this tag }}
     {{ghost_head}}
 </head>
@@ -23,8 +24,8 @@
 
 {{! Main Title}}
 
-        
-        
+
+
 <div class="container-fluid">
   <div class="row">
     <div class="col-xs-3 col-md-3 wrapper-header">
@@ -35,30 +36,30 @@
         {{else}}
         <a href="{{@blog.url}}"><h1 class="page-title">{{@blog.title}}</h1></a>
         {{/if}}
-        
+
       </div>
       <div class="separate"></div>
-      <div class="main-nav">{{navigation}}</div> 
+      <div class="main-nav">{{navigation}}</div>
       <div class="separate"></div>
       <div class="social-media">
         <a href="#"><span class="icon-twitter logo-instagram"></span></a>
         <a href="#"><span class="icon-instagram logo-instagram"></span></a>
         <a href="#"><span class="icon-linkedin logo-instagram"></span></a>
         <a href="#"><span class="icon-github logo-instagram"></span></a>
-      </div>  
+      </div>
     </div> <!-- wrapper-header -->
 
         {{! Everything else gets inserted here }}
         {{{body}}}
-      
+
         <div class="wrapper-footer">
           <footer>
                         <div class="col-md-12 col-md-6 col-lg-6">
                           <section class="powered">Proudly Powered by <a href="http://ghost.org/">Ghost</a>.
-                        </div>     
+                        </div>
                          <div class=" col-md-12 col-md-6 col-lg-6">
                         <section class="copyright">All content copyright <a href="{{@blog.url}}">{{@blog.title}}</a> &copy; {{date format="YYYY"}}.</section>
-                        </div>   
+                        </div>
 
                         <div class="clearfix"></div>
                       </footer>

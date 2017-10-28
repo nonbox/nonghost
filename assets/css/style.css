@@ -1,5 +1,7 @@
-@import url(https://fonts.googleapis.com/css?family=Oswald);
-@import url(https://fonts.googleapis.com/css?family=Abel);
+/*@import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url(https://fonts.googleapis.com/css?family=Abel);*/
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700');
+
 @font-face {
     font-family: 'icomoon';
     src:    url('../font/icomoon.eot?kh7isq');
@@ -27,11 +29,11 @@
 }
 
 /* General */
-body {font-family: 'Abel', sans-serif; }
+body {font-family: 'Source Sans Pro', sans-serif; }
 a, a:active, a:focus {color:#333; outline: none; outline-style: none;}
 a:hover {color:#333; text-decoration:none;}
 pre {padding:20px;}
-h1, h2, h3, h4, h5, h6 {font-family: 'Oswald', sans-serif;margin: 0;}
+h1, h2, h3, h4, h5, h6 {font-family: 'Source Sans Pro', sans-serif; margin: 0;}
 .separate { width   : 100%; position: relative; z-index : 1; margin-bottom: 40px; margin-top: 15px; clear: both; height: 1px;}
 .separate:before { content : ""; position: absolute; left    : 49%; bottom  : 0; height  : 1px; width   : 2%;  /* or 100px */border-bottom:1px solid white;}
 
@@ -42,7 +44,7 @@ h1, h2, h3, h4, h5, h6 {font-family: 'Oswald', sans-serif;margin: 0;}
 .main-title .page-desc { color: #bcbbba; letter-spacing: 2px; font-size: 14px; margin-top: 20px; padding: 0 40px;}
 @media screen and (max-width: 500px) {
     .main-title{ word-break: break-all; }
-    .main-title h1{ border: none; font-size: 16px; }   
+    .main-title h1{ border: none; font-size: 16px; }
 }
 
 
@@ -74,7 +76,7 @@ ul.nav, .responsive-menu { display: block; }
 .featured-post img {width: 20%; height:55px; float: left; margin-right: 10px; border-radius: 2px;}
 .featured-post a {color: #bbb;}
 .featured-post a:hover {color: #27ae60;}
-.featured-post h3 {font-size: 16px; line-height: 25px; font-family: 'Abel', sans-serif; }
+.featured-post h3 {font-size: 16px; line-height: 25px; font-family: 'Source Sans Pro', sans-serif; }
 
 /* Text */
 .text a{color: #27ae60;}
@@ -94,7 +96,7 @@ ul.nav, .responsive-menu { display: block; }
 #content, .content {margin-left: 25%;}
 .featured-image {float: left; width: 50%; }
 .featured-image img {width: 100%; height: 555px; z-index: 999999;}
-.loop-content {background: #fff;  padding: 40px 0 0; position: relative; overflow: hidden;} 
+.loop-content {background: #fff;  padding: 40px 0 0; position: relative; overflow: hidden;}
 .loop-content:last {border-bottom: 3px solid #000;}
 .loop-content .post-meta {text-align: center; color: #bebebe;  margin-bottom: 30px;}
 .loop-content .post-date { }
